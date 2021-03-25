@@ -1,7 +1,7 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 
 const dbConnect = require('./db/dbConnect');
 const User = require('./db/userModel');
@@ -11,8 +11,8 @@ const app = express();
 
 dbConnect();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res, next) => {
   res.json({ message: 'You wanted a response, so here you are!'});
