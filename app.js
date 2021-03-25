@@ -90,7 +90,7 @@ app.post('/login', (req,res) => {
     });
 });
 
-// free endpoint
+// open endpoint
 app.get('/free-endpoint', (req, res) => {
   res.json({ message: 'You are free to access this page anytime' });
 });
