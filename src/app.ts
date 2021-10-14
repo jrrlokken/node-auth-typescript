@@ -75,6 +75,7 @@ app.post("/login", (req: Request, res: Response) => {
             userId: user._id,
             userEmail: user.email,
           },
+          // @ts-ignore
           process.env.JWT_SECRET,
           { expiresIn: "24h" }
         );
