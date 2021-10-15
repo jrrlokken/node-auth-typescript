@@ -8,7 +8,7 @@
     "module": "commonjs",
     "rootDir": "src",
     "resolveJsonModule": true,
-    "outDir": "lib",
+    "outDir": "dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
 
