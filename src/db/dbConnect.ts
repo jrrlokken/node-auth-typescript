@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from 'mongoose'
 
 export default async function dbConnect (): Promise<void> {
   mongoose
@@ -9,10 +9,10 @@ export default async function dbConnect (): Promise<void> {
       useCreateIndex: true
     })
     .then(() => {
-      console.log('Successfully connected to MongoDB Atlas!');
+      console.log('Successfully connected to MongoDB Atlas!')
     })
     .catch(error => {
-      console.log('Unable to connect to MongoDB Atlast!');
-      console.error(error);
-    });
+      console.log('Unable to connect to MongoDB Atlast!')
+      console.error(error)
+    })
 }
